@@ -2,9 +2,12 @@ import React, { useState } from "react";
 
 import PackageContext from "./context";
 
-const provider = (props) => {
-  const [mission, setMission] =
-    useState[{ mname: "Go to europe", agent: 707, accept: "not accepted" }];
+const Provider = (props) => {
+  const [mission, setMission] = useState({
+    mname: "Go to europe",
+    agent: "007",
+    accept: "not accepted",
+  });
   return (
     <PackageContext.Provider
       value={{
@@ -18,3 +21,5 @@ const provider = (props) => {
     </PackageContext.Provider>
   );
 };
+
+export default Provider;
